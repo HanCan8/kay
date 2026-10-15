@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Dearest Kay ❤️</title>
+    <!-- Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for Myanmar & Stylish English -->
+    <link href="https://fonts.googleapis.com/css2?family=Pyidaungsu&family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Pyidaungsu', 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #feada6 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .romantic-font {
+            font-family: 'Great Vibes', cursive;
+        }
+        /* Glassmorphism Effect */
+        .glass {
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        /* Floating Hearts Animation */
+        @keyframes float {
+            0% { transform: translateY(0vh) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+        }
+        .heart {
+            position: absolute;
+            color: #ff3366;
+            animation: float 6s linear infinite;
+            font-size: 20px;
+            user-select: none;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="relative text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Floating Background Hearts Container -->
+    <div id="hearts-container" class="absolute inset-0 overflow-hidden pointer-events-none z-0"></div>
+
+    <!-- Wrapper for proper layout -->
+    <div class="relative z-10 flex flex-col min-h-screen justify-between p-4 max-w-xl mx-auto w-full">
+
+        <!-- Header Section -->
+        <header class="text-center my-3">
+            <h1 class="romantic-font text-4xl sm:text-5xl text-pink-700 drop-shadow-md mb-1">Ko Ko ❤️ Kay</h1>
+            <p class="text-xs sm:text-sm text-pink-900 font-medium">ကေးအတွက် ကိုကို အထူးဖန်တီးထားတဲ့ အမှတ်တရလေး 💖</p>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="w-full flex flex-col items-center gap-5 my-2">
+
+            <!-- One by One Photo Slider Section -->
+            <section class="glass w-full p-4 rounded-3xl shadow-xl text-center">
+                <h2 class="text-sm sm:text-base font-bold text-pink-900 mb-3 flex items-center justify-center gap-2">
+                    <span>✨</span> အမှတ်တရ ဓာတ်ပုံများ (မျက်နှာပြင် တစ်ခုချင်းစီ) <span>✨</span>
+                </h2>
+
+                <!-- Slide Container -->
+                <div class="relative overflow-hidden rounded-2xl shadow-lg h-64 sm:h-72 bg-white/20">
+                    
+                    <!-- Photo 1 (ကိုယ့်ပုံထည့်ရန် - photo1.jpg နေရာမှာ ကိုယ့်ပုံနာမည် သို့မဟုတ် ပုံလင့်ခ်ထည့်ပါ) -->
+                    <div class="slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-100 flex flex-col items-center justify-center p-2">
+                        <div class="w-full h-48 sm:h-56 overflow-hidden rounded-xl bg-white/30">
+                            <img src="photo1.jpg" alt="Kay 1" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                        <p class="text-xs sm:text-sm font-semibold text-pink-900 mt-2">📸 ကေးရဲ့ အလှဆုံး အပြုံးလေး (၁ / ၅)</p>
+                    </div>
+
+                    <!-- Photo 2 -->
+                    <div class="slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 pointer-events-none flex flex-col items-center justify-center p-2">
+                        <div class="w-full h-48 sm:h-56 overflow-hidden rounded-xl bg-white/30">
+                            <img src="photo2.jpg" alt="Kay 2" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1522748955276-d34346014e7f?auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                        <p class="text-xs sm:text-sm font-semibold text-pink-900 mt-2">📸 တန်ဖိုးရှိတဲ့ အမှတ်တရ (၂ / ၅)</p>
+                    </div>
+
+                    <!-- Photo 3 -->
+                    <div class="slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 pointer-events-none flex flex-col items-center justify-center p-2">
+                        <div class="w-full h-48 sm:h-56 overflow-hidden rounded-xl bg-white/30">
+                            <img src="photo3.jpg" alt="Kay 3" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1494774157365-9e04c6720e47?auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                        <p class="text-xs sm:text-sm font-semibold text-pink-900 mt-2">📸 ကိုကို ချစ်ရတဲ့ ကေး (၃ / ၅)</p>
+                    </div>
+
+                    <!-- Photo 4 -->
+                    <div class="slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 pointer-events-none flex flex-col items-center justify-center p-2">
+                        <div class="w-full h-48 sm:h-56 overflow-hidden rounded-xl bg-white/30">
+                            <img src="photo4.jpg" alt="Kay 4" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                        <p class="text-xs sm:text-sm font-semibold text-pink-900 mt-2">📸 ရင်ခုန်စရာ နေ့ရက်လေး (၄ / ၅)</p>
+                    </div>
+
+                    <!-- Photo 5 -->
+                    <div class="slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 pointer-events-none flex flex-col items-center justify-center p-2">
+                        <div class="w-full h-48 sm:h-56 overflow-hidden rounded-xl bg-white/30">
+                            <img src="photo5.jpg" alt="Kay 5" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                        <p class="text-xs sm:text-sm font-semibold text-pink-900 mt-2">📸 အချစ်ရဆုံးဘေဘီလေး🤎(၅ / ၅)</p>
+                    </div>
+
+                </div>
+
+                <!-- Slide Navigation Buttons -->
+                <div class="flex justify-between items-center mt-3 px-2">
+                    <button onclick="prevSlide()" class="px-4 py-1.5 bg-pink-600/80 hover:bg-pink-700 text-white text-xs sm:text-sm font-medium rounded-full shadow transition">
+                        ⬅️ ရှေ့တစ်ပုံ
+                    </button>
+                    <span id="slide-indicator" class="text-xs font-semibold text-pink-900">၁ / ၅</span>
+                    <button onclick="nextSlide()" class="px-4 py-1.5 bg-pink-600/80 hover:bg-pink-700 text-white text-xs sm:text-sm font-medium rounded-full shadow transition">
+                        နောက်တစ်ပုံ ➡️
+                    </button>
+                </div>
+            </section>
+
+            <!-- Interactive Love Note Generator -->
+            <section class="glass w-full p-4 rounded-3xl text-center shadow-xl">
+                <h3 class="text-sm sm:text-base font-bold text-pink-900 mb-1.5">💌 ကိုကို့ရဲ့ ကေးအတွက် ချစ်စကားများ</h3>
+                <p id="love-quote" class="text-gray-700 italic min-h-[45px] flex items-center justify-center text-xs sm:text-sm px-2">
+                    "ကေးက ကိုကို့ဘဝရဲ့ အလှပဆုံးနဲ့ တန်ဖိုးအရှိဆုံး အပြုံးပါပဲ..."
+                </p>
+                <button onclick="generateQuote()" class="mt-2 px-4 py-1.5 bg-pink-600 hover:bg-pink-700 text-white text-xs font-medium rounded-full shadow transition">
+                    နောက်ထပ် ချစ်စကား ဖတ်ရန် 💖
+                </button>
+            </section>
+
+            <!-- Special Propose Button -->
+            <section class="text-center my-1">
+                <button onclick="openModal()" class="px-6 py-2.5 bg-gradient-to-r from-red-500 to-pink-600 text-white font-bold text-sm sm:text-base rounded-full shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5">
+                    ကိုကို မေးစရာ ရှိတယ် 💍
+                </button>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center text-pink-900 text-xs py-2">
+            <p>Created with infinite ❤️ by Ko Ko for Kay.</p>
+        </footer>
+
+    </div>
+
+    <!-- Modal Popup -->
+    <div id="love-modal" class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden items-center justify-center z-50 p-4">
+        <div class="glass bg-white/90 p-6 rounded-3xl max-w-sm w-full text-center shadow-2xl relative">
+            <h2 class="romantic-font text-3xl text-pink-700 mb-2">Will You Be Mine Forever, Kay?</h2>
+            <p class="text-xs sm:text-sm text-gray-700 mb-5">ကိုကို့ရဲ့ တစ်ဘဝလုံးစာ အဖော်အဖြစ် ကေး ထာဝရ လက်ခံပေးမှာလား ဟင်? 🥰</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-2.5">
+                <button onclick="sayYes()" class="px-4 py-2 bg-pink-600 hover:bg-pink-700 text-white text-xs font-semibold rounded-full shadow transition">
+                    သေချာပေါက် လက်ခံပါတယ် ❤️
+                </button>
+                <button id="no-btn" onmouseover="moveNoButton()" onclick="sayNo()" class="px-4 py-2 bg-gray-300 hover:bg-gray-400 text-gray-700 text-xs font-semibold rounded-full shadow transition">
+                    စဉ်းစားဦးမယ် 😜
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Section -->
+    <script>
+        // Photo Slider Logic
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const indicator = document.getElementById('slide-indicator');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                if (i === index) {
+                    slide.classList.remove('opacity-0', 'pointer-events-none');
+                    slide.classList.add('opacity-100');
+                } else {
+                    slide.classList.remove('opacity-100');
+                    slide.classList.add('opacity-0', 'pointer-events-none');
+                }
+            });
+            indicator.innerText = `${index + 1} / ${slides.length}`;
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        // Quotes Logic
+        const quotes = [
+            "ကေးက ကိုကို့ဘဝရဲ့ အလှပဆုံးနဲ့ တန်ဖိုးအရှိဆုံး အပြုံးပါပဲ...",
+            "ကမ္ဘာကြီး ဘယ်လိုပြောင်းလဲသွားပါစေ၊ ကိုကို့ရဲ့ နှလုံးသားကတော့ ကေးအတွက်ပါပဲ။",
+            "ကေးနဲ့တွေ့ရတဲ့ အချိန်ကစပြီး ကိုကို့နေ့ရက်တွေ အကုန်လုံး အဓိပ္ပာယ်ရှိသွားတယ်။",
+            "ကေးရဲ့ အသံလေးကို ကြားရုံနဲ့တင် ကိုကို့ရဲ့ပင်ပန်းမှုတွေ အကုန်ပြေပျောက်သွားစေတယ်။",
+            "ဒီဘဝတင်မကဘူး၊ နောင်ဘဝတွေအထိလည်း ကေးကိုပဲ ကိုကို ချစ်နေမှာပါ...",
+            "ကေးက ကိုကို့ရဲ့ အချစ်ဆုံး၊ အယုယရဆုံးနဲ့ တစ်ဦးတည်းသော ကောင်မလေးပါပဲ。"
+        ];
+
+        function generateQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            document.getElementById("love-quote").innerText = `"${quotes[randomIndex]}"`;
+        }
+
+        // Floating Hearts Generator
+        function createHeart() {
+            const container = document.getElementById('hearts-container');
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.innerHTML = '❤️';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = (Math.random() * 3 + 4) + 's';
+            heart.style.fontSize = (Math.random() * 15 + 15) + 'px';
+            container.appendChild(heart);
+
+            setTimeout(() => {
+                heart.remove();
+            }, 6000);
+        }
+        setInterval(createHeart, 400);
+
+        // Modal Controls
+        const modal = document.getElementById('love-modal');
+
+        function openModal() {
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function sayYes() {
+            alert('ယေးးး! ကိုကို အရမ်းပျော်တာပဲ၊ ကေးကို ထာဝရ အမြဲတမ်း ချစ်နေမှာပါ ကေးရယ် ❤️🥰');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        // Playful 'No' button effect
+        function moveNoButton() {
+            const noBtn = document.getElementById('no-btn');
+            const x = Math.random() * 100 - 50;
+            const y = Math.random() * 60 - 30;
+            noBtn.style.transform = `translate(${x}px, ${y}px)`;
+        }
+
+        function sayNo() {
+            alert('ဟာ... ကေးကလည်း အဲ့လိုတော့ မလုပ်နဲ့လေ၊ ပြန်စဉ်းစားပေးပါဦးနော် 😜');
+        }
+    </script>
+</body>
+</html>
